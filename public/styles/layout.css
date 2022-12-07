@@ -18,8 +18,12 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column; 
+  /* align-items: flex-start; */
+  /* align-content: center; */
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #F8EDEB;
   font-size: 24px;
   font-family: 'Source Sans Pro', Sans-Serif;
 }
@@ -27,3 +31,15 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  padding-top: 1.5em;
+  background-color: #F8EDEB;
+  
+
+ }

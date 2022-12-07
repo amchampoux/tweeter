@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+
+header {
+  display: flex;
+  height: 520px;
+  width: 100%;
+  background-color: #f9dcc4;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.main-avatar {
+  padding-top: 120px;
+
+}
+
+.main-name {
+  color: 212529;
+  font-size: 28px;
+
+}

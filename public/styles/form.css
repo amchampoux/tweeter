@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+
+.tweet-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#tweet-text {
+  width: 100%;
+  height: 50px;
+  outline: 0;
+  border-width: 0 0 4px;
+  background-color: #F8EDEB;
+  border-color: #FEC89A;
+  margin-bottom: 40px;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter {
+  font-weight: 600;
+}
+
+.submit-button {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.submit-button::after {
+  content: "";
+  background-color: #FEC89A;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.submit-button:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+

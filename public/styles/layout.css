@@ -30,12 +30,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ .main {
   display: flex;
   align-self: center;
   flex-direction: column;
   width: 90%;
   height: 100%;
   padding-top: 1.5em;
-  background-color: #F8EDEB;
  }

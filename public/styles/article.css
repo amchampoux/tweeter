@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+
+.article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 1em;
+
+  border-color: #212529;
+  border-width: 1px;
+  border-radius: 1px;
+  border-style: solid;
+}
+.article:hover {
+  box-shadow: rgba(254, 200, 154, 1) 8px 8px
+}
+
+.article__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article__header__user {
+  display: flex;
+  align-items: center;
+}
+
+.article__header__user__name {
+  padding-left: 0.75em;
+  font-weight: 600;
+}
+
+.article__header__user__image {
+  width: 75px;
+  height: 75px;
+}
+
+.article__tweet {
+  font-size: 22px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#212529;
+  height: 1px;
+  margin-bottom: 1em;
+}
+
+.article__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article__footer__date {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.article__footer__social {
+  display: flex;
+  width: 5em;
+  justify-content: space-between;
+}
+
+
+
+
+

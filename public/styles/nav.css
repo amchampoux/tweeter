@@ -15,8 +15,6 @@
   align-items: flex-start;
 }
 
-
-
  .nav__left {
   display: flex;
   font-family: 'Bungee Shade', Sans-Serif;
@@ -33,4 +31,8 @@
  i {
   color: #f08080; 
  }
+
+ i:hover {
+  color: #212529; 
+}
 

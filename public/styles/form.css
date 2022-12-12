@@ -13,7 +13,7 @@
   border-width: 0 0 4px;
   background-color: #F8EDEB;
   border-color: #FEC89A;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .tweet-form__bottom {
@@ -63,11 +63,9 @@
 	position: relative;
 	margin-top: 15px;
 	margin-bottom: 25px;
-
 }
 
 .floating-label {
-  /* font-size: 13px; */
   color: #212529;
   position: absolute;
   pointer-events: none;
@@ -82,7 +80,6 @@ input:focus ~ .floating-label,
 		bottom: 0px;
 		left: 0px;
 		font-size: 20px;
-		/* opacity: 1; */
 		color: #212529;
 	}
 

@@ -16,18 +16,22 @@
   margin-bottom: 40px;
 }
 
-.form-bottom {
+.tweet-form__bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.counter {
+.tweet-form__bottom__counter {
   font-weight: 600;
 }
 
-.submit-button {
+.tweet-form__bottom__counter--negative {
+  color: #f08080;
+}
+
+.tweet-form__bottom__submit-button {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -38,7 +42,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.submit-button::after {
+.tweet-form__bottom__submit-button::after {
   content: "";
   background-color: #FEC89A;
   width: 100%;
@@ -50,7 +54,7 @@
   transition: 0.2s;
 }
 
-.submit-button:hover::after {
+.tweet-form__bottom__submit-button::hover::after {
   top: 0px;
   left: 0px;
 }

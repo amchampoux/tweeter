@@ -23,24 +23,25 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js" defer></script>
   </head>
 
   <body class="container">
     <!-- Top nav bar (fixed) -->
-    <nav class="container">
-      <span class="left-nav">tweeter</span>
-      <div class="right-nav">
+    <nav class="nav">
+      <span class="nav__left">tweeter</span>
+      <div class="nav__right">
         <span class="new-tweet"><strong>Write</strong> a new tweet</span>
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
      <!-- Header of the page -->
-    <header class="container">
-      <div class="main-avatar">
+    <header class="hero">
+      <div class="hero__avatar">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
-      <span class="main-name"><strong>Anne-Marie</strong> Champoux</span>
+      <span class="hero__name"><strong>Anne-Marie</strong> Champoux</span>
   </header>
 
     <!-- Page-specific (main) content here -->
@@ -53,9 +54,9 @@
             id="tweet-text"
             placeholder="What are you humming about?">
         </input>
-          <div class="form-bottom">
-            <button class="submit-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+          <div class="tweet-form__bottom">
+            <button class="tweet-form__bottom__submit-button" type="submit">Tweet</button>
+            <output name="counter" class="tweet-form__bottom__counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>

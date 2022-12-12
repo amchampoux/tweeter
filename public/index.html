@@ -49,11 +49,16 @@
       <section>
         <!-- <h2>Compose Tweet</h2> -->
         <form class="tweet-form" method="post" action="/tweets/" >
-          <input
+          <div class="floating-label-group">
+            <input
             name="text" 
             id="tweet-text"
-            placeholder="What are you humming about?">
-        </input>
+            type="text"
+            autocomplete="off"
+            required>
+           </input>
+           <label class="floating-label">What are you humming about?</label>
+          </div>
           <div class="tweet-form__bottom">
             <button class="tweet-form__bottom__submit-button" type="submit">Tweet</button>
             <output name="counter" class="tweet-form__bottom__counter" for="tweet-text">140</output>

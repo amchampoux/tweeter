@@ -11,6 +11,8 @@ $form.on('input', 'input:text', function() {
   $counter.html(counterValue);
   if (counterValue < 0) {
     $counter.addClass("tweet-form__bottom__counter--negative");
+  } else if (counterValue > 0) {
+    $counter.reset();
   }
 });
 

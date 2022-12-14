@@ -8,8 +8,13 @@
 $(document).ready(()=> {
 
   const $form = $('form');
+  const $input = $('#tweet-text');
+  const $tweetContainer = $('#tweets-container');
 
   const renderTweets = function(tweets) {
+    
+    $tweetContainer.empty();
+
     let output;
     // loops through tweets
     for (let tweet of tweets) {
@@ -17,7 +22,7 @@ $(document).ready(()=> {
       // calls createTweetElement for each tweet
       output = createTweetElement(tweet);
       // takes return value and appends it to the tweets container
-      $('#tweets-container').append(output);
+      $('#tweets-container').prepend(output);
     }
   };
 
@@ -63,8 +68,11 @@ $(document).ready(()=> {
       event.preventDefault();
       alert('Your tweet is too long!');
     } else {
+      $input.val('');
       $.post('/tweets', data, (response) => {
         console.log('post response:', response);
+
+        loadtweets();
       });
     }
   });

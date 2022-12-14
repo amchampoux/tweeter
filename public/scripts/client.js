@@ -58,11 +58,14 @@ $(document).ready(()=> {
     event.preventDefault();
     const data = $form.serialize();
     console.log(data);
-    $.post('/tweets', data, (response) => {
-      console.log('post response:', response);
-    });
+
+    if (data.length > 140) {
+      event.preventDefault();
+      alert('Your tweet is too long!');
+    } else {
+      $.post('/tweets', data, (response) => {
+        console.log('post response:', response);
+      });
+    }
   });
-
-
-
 });

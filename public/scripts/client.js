@@ -7,6 +7,8 @@
 
 $(document).ready(()=> {
 
+  const $form = $('form');
+
   const tweetData = [
     {
       "user": {
@@ -68,6 +70,25 @@ $(document).ready(()=> {
     return $tweet;
   };
 
-  renderTweets(tweetData);
+  // renderTweets(tweetData);
+
+  const loadtweets = function() {
+    $.get('/tweets', (tweets) => {
+      renderTweets(tweets);
+    });
+  };
+
+  loadtweets();
+
+  $form.on('submit', (event) => {
+    event.preventDefault();
+    const data = $form.serialize();
+    console.log(data);
+    $.post('/tweets', data, (response) => {
+      console.log('post response:', response);
+    });
+  });
+
+
 
 });

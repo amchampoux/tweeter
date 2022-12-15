@@ -51,6 +51,10 @@
       <section>
         <!-- Compose Tweet -->
         <form class="tweet-form" method="post" action="/tweets/" >
+          <div class="error__box" id="error__box">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <label class="error__box__text">Your text is too long! Please respect the limit of 140 characters.</label>
+          </div>
           <div class="floating-label-group">
             <input
             name="text" 

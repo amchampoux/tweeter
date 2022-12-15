@@ -84,6 +84,19 @@ input:focus ~ .floating-label,
 		color: #212529;
 	}
 
+  .error__box {
+    display: none;
+    align-items: center;
+    background-color: #FEC89A;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .error__box__text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 0.5em;
+  }
 
 
 

@@ -10,6 +10,7 @@ $(document).ready(()=> {
   const $form = $('form');
   const $input = $('#tweet-text');
   const $tweetContainer = $('#tweets-container');
+  const $error = $('#error__box');
 
   const renderTweets = function(tweets) {
     
@@ -71,9 +72,12 @@ $(document).ready(()=> {
     console.log(data);
 
     if (data.length > 140) {
+      $error.css("display", "flex");
+      $error.slideDown();
       event.preventDefault();
-      alert('Your tweet is too long!');
+      
     } else {
+      $error.slideUp();
       $input.val('');
       $.post('/tweets', data, (response) => {
         console.log('post response:', response);

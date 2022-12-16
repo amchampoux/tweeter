@@ -33,8 +33,12 @@
     <nav class="nav">
       <span class="nav__left">tweeter</span>
       <div class="nav__right">
-        <span class="new-tweet"><strong>Write</strong> a new tweet</span>
-        <i class="fa-solid fa-angles-down"></i>
+        <!-- <button class="nav__right__btn" type="submit"> -->
+          <span class="nav__right__btn__text"><strong>Write</strong> a new tweet</span>
+          <i class="fa-solid fa-angles-down"></i>
+        <!-- </button> -->
+        
+        
       </div>
     </nav>
      <!-- Header of the page -->
@@ -50,7 +54,7 @@
     <main class="main">
       <section>
         <!-- Compose Tweet -->
-        <form class="tweet-form" method="post" action="/tweets/" >
+        <form class="tweet-form" id="tweet-form"  method="post" action="/tweets/" >
           <div class="error__box" id="error__box">
             <i class="fa-solid fa-circle-exclamation"></i>
             <label class="error__box__text">Your text is too long! Please respect the limit of 140 characters.</label>

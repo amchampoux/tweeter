@@ -6,7 +6,7 @@
  */
 
 $(document).ready(()=> {
-
+  const $navButton = $('nav__right__btn__text');
   const $form = $('form');
   const $input = $('#tweet-text');
   const $tweetContainer = $('#tweets-container');
@@ -66,6 +66,14 @@ $(document).ready(()=> {
   };
 
   loadtweets();
+
+  $('i').click(function() {
+    $form.css("display", "flex");
+    $form.slideDown("slow");
+  },
+  function() {
+    $form.slideToggle("slow");
+  });
 
   $form.on('submit', (event) => {
     event.preventDefault();

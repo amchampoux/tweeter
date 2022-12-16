@@ -29,11 +29,30 @@
   align-items: center;
  }
 
+ .nav__right__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none; 
+  background: none;
+ }
+
+ .nav__right__btn__text {
+  color: #545149;
+ }
+
  i {
+  display: block;
   color: #f08080; 
+  /* background-color: aqua; */
+  padding: 10px 20px 10px 20px;
  }
 
  i:hover {
+  color: #545149; 
+}
+
+i::after {
   color: #545149; 
 }
 

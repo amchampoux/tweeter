@@ -11,7 +11,9 @@ $(document).ready(()=> {
     let counterValue = initialValue - $input.val().length;
     $counter.html(counterValue);
     if (counterValue < 0) {
-      $counter.addClass("tweet-form__bottom__counter--negative");
+      $counter.css("color", "#f08080");
+    } else {
+      $counter.css("color", "#545149");
     }
   });
 });

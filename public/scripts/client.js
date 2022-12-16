@@ -11,6 +11,7 @@ $(document).ready(()=> {
   const $input = $('#tweet-text');
   const $tweetContainer = $('#tweets-container');
   const $error = $('#error__box');
+  const $counter = $('output');
 
   const renderTweets = function(tweets) {
     
@@ -38,7 +39,7 @@ $(document).ready(()=> {
       <article class="tweet">
         <header class="tweet__header">
           <div class="tweet__header__user">
-            <img class="tweet__header__user__image" src=${tweetData.user.avatars}> 
+            <img class="tweet__header__user__image" alt="Profile picture" src=${tweetData.user.avatars}> 
             <label class="tweet__header__user__name">${tweetData.user.name}e</label>
           </div>
           <label class="tweet__header__user__alias">${tweetData.user.handle}</label>
@@ -75,15 +76,14 @@ $(document).ready(()=> {
       $error.css("display", "flex");
       $error.slideDown();
       event.preventDefault();
-      
     } else {
-      $error.slideUp();
       $input.val('');
+      $counter.val('140');
       $.post('/tweets', data, (response) => {
         console.log('post response:', response);
-
         loadtweets();
       });
+      $error.slideUp();
     }
   });
 });

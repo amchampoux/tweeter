@@ -38,3 +38,21 @@ body {
   height: 100%;
   padding-top: 3em;
  }
+
+ #back-to-top {
+  display: none;
+  bottom: 20px;
+  right: 30px;
+  position: fixed;
+  z-index: 99;
+  border-width: 1px;
+  border-radius: 45px;
+  background: #F8EDEB;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+ }
+
+ #back-to-top:hover {
+  background: #FEC89A;
+ }

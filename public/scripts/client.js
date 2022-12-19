@@ -6,12 +6,12 @@
  */
 
 $(document).ready(()=> {
-  const $navButton = $('nav__right__btn__text');
   const $form = $('form');
   const $input = $('#tweet-text');
   const $tweetContainer = $('#tweets-container');
   const $error = $('#error__box');
   const $counter = $('output');
+  const $writeIcon = $('#write-icon');
 
   const renderTweets = function(tweets) {
     
@@ -67,13 +67,16 @@ $(document).ready(()=> {
 
   loadtweets();
 
-  $('i').click(function() {
+  $writeIcon.click(function() {
     $form.css("display", "flex");
-    $form.slideDown("slow");
+    $form.slideDown();
   },
   function() {
     $(this).toggleClass("down");
-    $form.slideToggle("slow");
+    $form.slideToggle();
+    setTimeout(() => {
+      $input.focus();
+    }, 1000);
   });
 
   $form.on('submit', (event) => {

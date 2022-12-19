@@ -48,13 +48,23 @@
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
+  cursor: pointer;
 }
-i.down {
+
+ i:hover {
+  color: #545149; 
+}
+
+#write-icon {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  cursor: pointer;
+}
+
+#write-icon.down {
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg);
-}
- i:hover {
-  color: #545149; 
 }
 

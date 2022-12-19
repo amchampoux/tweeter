@@ -72,6 +72,7 @@ $(document).ready(()=> {
     $form.slideDown("slow");
   },
   function() {
+    $(this).toggleClass("down");
     $form.slideToggle("slow");
   });
 

@@ -42,17 +42,19 @@
  }
 
  i {
-  display: block;
+  display: inline-block;
   color: #f08080; 
-  /* background-color: aqua; */
   padding: 10px 20px 10px 20px;
- }
-
- i:hover {
-  color: #545149; 
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
-
-i::after {
+i.down {
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+ i:hover {
   color: #545149; 
 }
 

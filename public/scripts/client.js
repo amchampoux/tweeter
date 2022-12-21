@@ -12,11 +12,13 @@ $(document).ready(()=> {
   const $error = $('#error__box');
   const $counter = $('output');
   const $writeIcon = $('#write-icon');
+  const $tweetPlaceholder = $('.tweet--placeholder');
+
 
   const renderTweets = function(tweets) {
     
     $tweetContainer.empty();
-
+    
     let output;
     // loops through tweets
     for (let tweet of tweets) {
@@ -36,7 +38,7 @@ $(document).ready(()=> {
 
   const createTweetElement = function(tweetData) {
     let $tweet = `
-      <article class="tweet">
+      <article class="tweet" id="tweet">
         <header class="tweet__header">
           <div class="tweet__header__user">
             <img class="tweet__header__user__image" alt="Profile picture" src=${tweetData.user.avatars}> 
@@ -61,6 +63,7 @@ $(document).ready(()=> {
 
   const loadtweets = function() {
     $.get('/tweets', (tweets) => {
+      $tweetPlaceholder.css("display", "none");
       renderTweets(tweets);
     });
   };
@@ -93,8 +96,11 @@ $(document).ready(()=> {
       $.post('/tweets', data, (response) => {
         console.log('post response:', response);
         loadtweets();
+        
       });
       $error.slideUp();
     }
   });
 });
+
+

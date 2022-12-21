@@ -73,10 +73,9 @@ $(document).ready(()=> {
   },
   function() {
     $(this).toggleClass("down");
-    $form.slideToggle();
-    setTimeout(() => {
+    $form.slideToggle(400, () => {
       $input.focus();
-    }, 1000);
+    });
   });
 
   $form.on('submit', (event) => {

@@ -9,7 +9,7 @@ $(document).ready(()=> {
   const $top = $('#back-to-top');
   const $writeIcon = $('#write-icon');
 
-  $form.on('input', 'input:text', function(e) {
+  $form.on('input', '#tweet-text', function(e) {
     const initialValue = 140;
     let counterValue = initialValue - $input.val().length;
     $counter.html(counterValue);

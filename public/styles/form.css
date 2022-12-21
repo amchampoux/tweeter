@@ -85,7 +85,7 @@ input:focus ~ .floating-label,
     align-items: center;
     background-color: #FEC89A;
     padding: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .error__box__text {

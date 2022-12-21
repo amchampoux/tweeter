@@ -38,7 +38,7 @@ $(document).ready(()=> {
 
   const createTweetElement = function(tweetData) {
     let $tweet = `
-      <article class="tweet" id="tweet">
+      <article class="tweet">
         <header class="tweet__header">
           <div class="tweet__header__user">
             <img class="tweet__header__user__image" alt="Profile picture" src=${tweetData.user.avatars}> 
@@ -63,7 +63,7 @@ $(document).ready(()=> {
 
   const loadtweets = function() {
     $.get('/tweets', (tweets) => {
-      $tweetPlaceholder.css("display", "none");
+      $tweetPlaceholder.addClass("tweet--hidden");
       renderTweets(tweets);
     });
   };

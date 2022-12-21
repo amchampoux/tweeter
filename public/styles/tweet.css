@@ -14,8 +14,8 @@
   border-style: solid;
 }
 
-#tweet {
-  display: flex;
+.tweet--hidden {
+  display: none;
 
 }
 .tweet:hover {

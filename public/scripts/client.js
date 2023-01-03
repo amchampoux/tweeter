@@ -40,17 +40,17 @@ $(document).ready(()=> {
     let $tweet = `
       <article class="tweet">
         <header class="tweet__header">
-          <div class="tweet__header__user">
-            <img class="tweet__header__user__image" alt="Profile picture" src=${tweetData.user.avatars}> 
-            <label class="tweet__header__user__name">${tweetData.user.name}e</label>
+          <div class="tweet__user">
+            <img class="tweet__userImage" alt="Profile picture" src=${tweetData.user.avatars}> 
+            <label class="tweet__userName">${tweetData.user.name}e</label>
           </div>
-          <label class="tweet__header__user__alias">${tweetData.user.handle}</label>
+          <label class="tweet__userAlias">${tweetData.user.handle}</label>
         </header>
         <p class="tweet__tweet">${escape(tweetData.content.text)}</p>
         <hr>
         <footer class="tweet__footer">
-          <label class="tweet__footer__date">${tweetData.created_at}</label>
-          <div class="tweet__footer__social">
+          <label class="tweet__date">${tweetData.created_at}</label>
+          <div class="tweet__social">
             <i class="fa-brands fa-square-facebook fa-sm"></i>
             <i class="fa-solid fa-share-from-square fa-sm"></i>
             <i class="fa-solid fa-heart fa-sm"></i>

@@ -14,6 +14,14 @@
   border-style: solid;
 }
 
+.placeholder {
+  background-color: #444;
+  height: 24px;
+  border-radius: 100px;
+  opacity: .1;
+  animation: fading 1.5s infinite;
+}
+
 .tweet--hidden {
   display: none;
 
@@ -29,23 +37,41 @@
   align-items: center;
 }
 
-.tweet__header__user {
+.tweet__user {
   display: flex;
   align-items: center;
 }
 
-.tweet__header__user__name {
+.tweet__userName {
   padding-left: 0.75em;
   font-weight: 600;
 }
 
-.tweet__header__user__image {
+.tweet__userName--placeholder {
+  display: inline-block;
+  margin: 0 0 0 0.75em;
+  min-width: 100px;
+}
+
+.tweet__userImage {
   width: 65px;
   height: 65px;
 }
 
+.tweet__userImage--placeholder {
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+}
+
 .tweet__tweet {
   font-size: 22px;
+}
+
+.tweet__tweet--placeholder {
+  display: inline-block;
+  padding-bottom: 0em;
+  width: 100%;
 }
 
 hr {
@@ -65,40 +91,9 @@ hr {
   align-items: center;
 }
 
-.tweet__footer__date {
+.tweet__date {
   font-size: 16px;
   font-weight: 600;
-}
-
-.tweet__header__user__name--placeholder {
-  display: inline-block;
-  background-color: #444;
-  height: 24px;
-  border-radius: 100px;
-  margin: 0 0 0 0.75em;
-  min-width: 100px;
-  opacity: .1;
-  animation: fading 1.5s infinite;
-}
-
-.tweet__header__user__image--placeholder {
-  background-color: #444;
-  width: 65px;
-  height: 65px;
-  border-radius: 65px;
-  opacity: .1;
-  animation: fading 1.5s infinite;
-}
-
-.tweet__tweet--placeholder {
-  display: inline-block;
-  background-color: #444;
-  height: 24px;
-  border-radius: 100px;
-  padding-bottom: 0em;
-  width: 100%;
-  opacity: .1;
-  animation: fading 1.5s infinite;
 }
 
 @keyframes fading {

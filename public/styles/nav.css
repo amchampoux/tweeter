@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Ultra&display=swap'); 
 
 .nav {
   position: fixed;
@@ -6,8 +6,6 @@
   height: 120px;
   width: 100%;
   color: #545149;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
   padding-top: 1.75em;
   flex-direction: row;
   justify-content: space-between;
@@ -21,8 +19,8 @@
 
  .nav__left {
   display: flex;
-  font-family: 'Bungee Shade', Sans-Serif;
-  font-size: 32px;
+  font-family: 'Ultra', serif;
+  font-size: 52px;
   align-content: center;
  }
 

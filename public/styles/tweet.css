@@ -6,7 +6,6 @@
   flex-direction: column;
   position: relative;
   margin-top: 2em;
-  margin-bottom: 2em;
   padding: 1em;
   border-color: #212529;
   border-width: 1px;
@@ -24,8 +23,8 @@
 
 .tweet--hidden {
   display: none;
-
 }
+
 .tweet:hover {
   box-shadow: rgba(254, 200, 154, 1) 8px 8px
 }

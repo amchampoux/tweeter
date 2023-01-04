@@ -39,13 +39,13 @@ $(document).ready(()=> {
   const createTweetElement = function(tweetData) {
     let $tweet = `
       <article class="tweet">
-        <header class="tweet__header">
+        <div class="tweet__header">
           <div class="tweet__user">
             <img class="tweet__userImage" alt="Profile picture" src=${tweetData.user.avatars}> 
             <label class="tweet__userName">${tweetData.user.name}e</label>
           </div>
           <label class="tweet__userAlias">${tweetData.user.handle}</label>
-        </header>
+        </div>
         <p class="tweet__tweet">${escape(tweetData.content.text)}</p>
         <hr>
         <footer class="tweet__footer">

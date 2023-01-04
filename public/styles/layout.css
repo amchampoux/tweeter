@@ -19,7 +19,7 @@ html {
 
 body {
   display: flex;
-  flex-direction: column; 
+  /* flex-direction: column;  */
   color: #545149;
   background-color: #F8EDEB;
   font-size: 24px;
@@ -33,7 +33,6 @@ body {
  .main {
   display: flex;
   align-self: center;
-  flex-direction: column;
   width: 90%;
   height: 100%;
   padding-top: 3em;
@@ -55,4 +54,52 @@ body {
 
  #back-to-top:hover {
   background: #FEC89A;
+ }
+
+ @media only screen and (max-width: 1023px)  {
+  body {
+    flex-direction: column; 
+  }
+  .main {
+    flex-direction: column;
+  }
+  .hero {
+    background-color: aqua;
+  }
+  .hero__avatar {
+    padding-top: 120px;
+  }
+ }
+
+ @media only screen and (min-width: 1024px) {
+  header {
+    width: 33.3%;
+    float: left;
+    margin-top: 100px;
+  }
+  .nav {
+    background-color: #FFB5A7;
+  }
+  .main {
+    flex-direction: row;
+    margin-top: 90px; 
+    margin-right: 50px;
+  }
+  form {
+    width: 66.7%;
+    min-width: 420px;
+    float: right;
+  }
+  .tweet {
+    width: 66.7%;
+    min-width: 420px;
+    float: right;
+  }
+  .hero {
+    margin-top: 205px;
+    margin-left: 50px;
+  }
+  .hero__avatar {
+    padding-top: 0px;
+  }
  }

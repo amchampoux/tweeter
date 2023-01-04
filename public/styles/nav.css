@@ -5,8 +5,7 @@
   display: flex;
   height: 120px;
   width: 100%;
-  background-color: #FFB5A7;
-  color: #ffffff;
+  color: #545149;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.75em;
@@ -14,6 +13,10 @@
   justify-content: space-between;
   align-items: flex-start;
   z-index: 1;
+}
+
+.nav--background {
+  background-color: #FFB5A7;
 }
 
  .nav__left {
@@ -35,10 +38,6 @@
   align-items: center;
   border: none; 
   background: none;
- }
-
- .nav__right__btn__text {
-  color: #545149;
  }
 
  i {

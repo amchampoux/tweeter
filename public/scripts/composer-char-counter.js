@@ -8,6 +8,7 @@ $(document).ready(()=> {
   const $counter = $('output');
   const $top = $('#back-to-top');
   const $writeIcon = $('#write-icon');
+  const $nav = $('nav');
 
   $form.on('input', '#tweet-text', function(e) {
     const initialValue = 140;
@@ -27,8 +28,11 @@ $(document).ready(()=> {
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       $top.css("display", "block");
+      $nav.addClass("nav--background");
+
     } else {
       $top.css("display", "none");
+      $nav.removeClass("nav--background");
     }
   }
 

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Ultra&display=swap'); 
+@import 'variables';
 
 .nav {
   position: fixed;
   display: flex;
   height: 120px;
   width: 100%;
-  color: #545149;
+  color: $medium-grey;
   padding-top: 1.75em;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +15,7 @@
 }
 
 .nav--background {
-  background-color: #FFB5A7;
+  background-color: $dark2-pink;
 }
 
  .nav__left {
@@ -39,7 +40,7 @@
 
  i {
   display: inline-block;
-  color: #f08080; 
+  color: $dark-pink; 
   padding: 10px 20px 10px 20px;
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
@@ -48,7 +49,7 @@
 }
 
  i:hover {
-  color: #545149; 
+  color: $medium-grey; 
 }
 
 #write-icon {

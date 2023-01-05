@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+@import 'variables';
 
 .hero {
   display: flex;
   height: 520px;
   width: 100%;
-  background-color: #fcd5ce;
+  background-color: $medium-pink;
   background-image: url("https://www.transparenttextures.com/patterns/connected.png");
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,6 @@
 }
 
 .hero__name {
-  color: #212529;
+  color: $medium-grey;
   font-size: 28px;
 }

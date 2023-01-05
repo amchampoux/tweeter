@@ -24,7 +24,7 @@
 
 .tweet-form__bottom__counter {
   font-weight: 600;
-  color: #545149;
+  color: #444;
 }
 
 .tweet-form__bottom__submit-button {
@@ -62,7 +62,7 @@
 }
 
 .floating-label {
-  color: #212529;
+  color: #545149;
   position: absolute;
   pointer-events: none;
   top: 9px;
@@ -76,7 +76,7 @@ input:not(:focus):valid ~ .floating-label {
   bottom: 0px;
   left: 0px;
   font-size: 20px;
-  color: #212529;
+  color: #444;
 }
 
 .error__box {

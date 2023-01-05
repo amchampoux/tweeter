@@ -6,7 +6,7 @@
   position: relative;
   margin-top: 2em;
   padding: 1em;
-  border-color: #212529;
+  border-color: #444;
   border-width: 1px;
   border-radius: 1px;
   border-style: solid;
@@ -25,7 +25,7 @@
 }
 
 .tweet:hover {
-  box-shadow: rgb(254, 200, 154) 8px 8px;
+  box-shadow: #FEC89A 8px 8px;
 }
 
 .tweet__header {
@@ -77,7 +77,7 @@ hr {
   clear: both;
   display: block;
   width: 100%;
-  background-color: #212529;
+  background-color: #444;
   height: 1px;
   margin-bottom: 1em;
 }

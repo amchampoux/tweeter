@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+@import 'variables';
 
 .tweet,
 .tweet--placeholder {
@@ -7,14 +8,14 @@
   position: relative;
   margin-top: 2em;
   padding: 1em;
-  border-color: #212529;
+  border-color: $dark-grey;
   border-width: 1px;
   border-radius: 1px;
   border-style: solid;
 }
 
 .placeholder {
-  background-color: #444;
+  background-color: $dark-grey;
   height: 24px;
   border-radius: 100px;
   opacity: .1;
@@ -26,7 +27,8 @@
 }
 
 .tweet:hover {
-  box-shadow: rgba(254, 200, 154, 1) 8px 8px
+  box-shadow: $dark-orange 8px 8px
+  // box-shadow: rgba(254, 200, 154, 1) 8px 8px
 }
 
 .tweet__header {
@@ -78,7 +80,7 @@ hr {
   clear:both;
   display:block;
   width: 100%;               
-  background-color:#212529;
+  background-color: $dark-grey;
   height: 1px;
   margin-bottom: 1em;
 }

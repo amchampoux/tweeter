@@ -5,6 +5,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Ultra&display=swap'); 
+@import 'variables';
 
 html {
   box-sizing: border-box;
@@ -19,8 +20,8 @@ html {
 
 body {
   display: flex;
-  color: #545149;
-  background-color: #F8EDEB;
+  color: $medium-grey;
+  background-color: $light-pink;
   font-size: 24px;
   font-family: 'Source Sans Pro', Sans-Serif;
 }
@@ -43,14 +44,14 @@ body {
   z-index: 99;
   border-width: 1px;
   border-radius: 45px;
-  background: #F8EDEB;
+  background: $light-pink;
   width: 50px;
   height: 50px;
   cursor: pointer;
  }
 
  #back-to-top:hover {
-  background: #FEC89A;
+  background: $dark-orange;
  }
 
  @media only screen and (max-width: 1023px)  {
@@ -86,7 +87,7 @@ body {
   }
 
   .nav {
-    background-color: #FFB5A7;
+    background-color: $dark2-pink;
     padding-left: 3em;
     padding-right: 3em;
   }

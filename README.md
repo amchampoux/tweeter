@@ -16,15 +16,15 @@ This app is build with Javascript, jQuery and AJAX on the front-end, and with Ex
 
 **Main page form**
 
-!["Screenshot of main page form"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page.png?raw=true)
+!["Screenshot of main page form"](https://github.com/amchampoux/tweeter/blob/master/docs/desktop_tweet_form.gif)
 
 **Error displayed on too long tweet**
 
-!["Screenshot of error displayed on too long tweet"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Error.png?raw=true)
+!["Screenshot of error displayed on too long tweet"](https://github.com/amchampoux/tweeter/blob/master/docs/desktop_long_tweet.png)
 
 **Main page on tablet vieww**
 
-!["Screenshot of main page on tablet view"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page-Small.png?raw=true)
+!["Screenshot of main page on tablet view"](https://github.com/amchampoux/tweeter/blob/master/docs/tablet_scroll.gif)
 
 ## Getting Started
 1. Install dependencies using the `npm install` command.

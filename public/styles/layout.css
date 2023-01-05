@@ -57,16 +57,22 @@ body {
   body {
     flex-direction: column; 
   }
+
   .nav {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+
+  .nav__left {
+    font-size: 44px;
+   }
   
   .main {
     flex-direction: column;
     align-self: center; 
     padding-top: 1.5em;
   }
+
   .hero__avatar {
     padding-top: 120px;
   }
@@ -78,11 +84,17 @@ body {
     float: left;
     margin-top: 100px;
   }
+
   .nav {
     background-color: #FFB5A7;
     padding-left: 3em;
     padding-right: 3em;
   }
+
+  .nav__left {
+    font-size: 52px;
+   }
+
   .main {
     flex-direction: row;
     align-items: flex-start;
@@ -113,6 +125,7 @@ body {
     margin-left: 10%;
     min-width: 350px;
   }
+
   .hero__avatar {
     padding-top: 0px;
   }

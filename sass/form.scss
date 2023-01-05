@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); 
+
 .tweet-form {
   display: none;
   flex-direction: column;
@@ -56,9 +57,9 @@
 }
 
 .floating-label-group {
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 25px;
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
 }
 
 .floating-label {
@@ -71,25 +72,31 @@
 }
 
 input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
-  top: -30px;
-  bottom: 0px;
-  left: 0px;
-  font-size: 20px;
-  color: #212529;
-}
+	input:not(:focus):valid ~ .floating-label {
+		top: -30px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 20px;
+		color: #212529;
+	}
 
-.error__box {
-  display: none;
-  align-items: center;
-  background-color: #FEC89A;
-  padding: 0.5em;
-  padding-right: 3em;
-  margin-bottom: 2em;
-}
+  .error__box {
+    display: none;
+    align-items: center;
+    background-color: #FEC89A;
+    padding: 0.5em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+  }
 
-.error__box__text {
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 0.5em;
-}
+  .error__box__text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 0.5em;
+  }
+
+
+
+
+
+

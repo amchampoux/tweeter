@@ -3,11 +3,12 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Ultra&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Ultra&display=swap'); 
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -15,24 +16,26 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   display: flex;
   color: #545149;
   background-color: #F8EDEB;
   font-size: 24px;
-  font-family: "Source Sans Pro", Sans-Serif;
+  font-family: 'Source Sans Pro', Sans-Serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.main {
+
+ .main {
   display: flex;
   width: 90%;
   height: 100%;
-}
+ }
 
-#back-to-top {
+ #back-to-top {
   display: none;
   bottom: 20px;
   right: 30px;
@@ -44,73 +47,86 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
-}
+ }
 
-#back-to-top:hover {
+ #back-to-top:hover {
   background: #FEC89A;
-}
+ }
 
-@media only screen and (max-width: 1023px) {
+ @media only screen and (max-width: 1023px)  {
   body {
-    flex-direction: column;
+    flex-direction: column; 
   }
+
   .nav {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+
   .nav__left {
     font-size: 44px;
-  }
+   }
+  
   .main {
     flex-direction: column;
-    align-self: center;
+    align-self: center; 
     padding-top: 1.5em;
   }
+
   .hero__avatar {
     padding-top: 120px;
   }
-}
-@media only screen and (min-width: 1024px) {
+ }
+
+ @media only screen and (min-width: 1024px) {
   header {
     width: 33.3%;
     float: left;
     margin-top: 100px;
   }
+
   .nav {
     background-color: #FFB5A7;
     padding-left: 3em;
     padding-right: 3em;
   }
+
   .nav__left {
     font-size: 52px;
-  }
+   }
+
   .main {
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 90px;
-    margin-left: 50px;
-    margin-right: 10%;
+    margin-top: 90px; 
+    margin-left:50px;
+    margin-right: 10%; 
     padding-top: 3em;
   }
+
   form {
     width: 100%;
     margin-top: 0px;
     float: right;
     margin-top: 100px;
   }
+
   .tweet,
   .tweet--placeholder {
-    min-width: 550px;
+    min-width: 550px; 
   }
+
   .tweet-form__bottom {
     padding-bottom: 2em;
   }
+  
   .hero {
     margin-top: 205px;
     margin-left: 10%;
     min-width: 350px;
   }
+
   .hero__avatar {
     padding-top: 0px;
   }
-}
+ }

@@ -1,35 +1,30 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a single-page Twitter clone, where users can create short posts of up to 140 characters and have them append to the main page. Posts are sequential, with the most recent posts appearing at the top of the page. To do so, Tweeter fetches a list of posts from a simplified ‘server’ and allows users to add posts to this list dynamically. 
 
-This app allow the user to post tweets to a Tweet feed. This app was built with Javascript, jQuery, AJAX on the front-end, and with Express and Node on the back-end. The contents of the app were built using HTML and CSS styling. 
+This app is build with Javascript, jQuery and AJAX on the front-end, and with Express and Node on the back-end. 
 
 # Final Product
 
 ## Core Features
-- Start by writing a tweet in the tweet box and clicking on "Tweet". This will "Submit" the tweet to the back-end via AJAX.
+- Start by writing a tweet in the tweet box and clicking on "Tweet". This will "Submit" the tweet to the back-end via an AJAX request.
 - A successful POST request will then GET the tweet object back from the back-end and update the feed without having to refresh the page. 
 - An error message will be displayed if an empty tweet or a tweet longer than 140 characters is being submitted. 
-- This app uses responsive design and will adjust depending on the display size. 
+- This app uses responsive design and will adjust depending on the screen size. 
 
 ## Screenshots
 
-**Main Tweeter Page**
+**Main page form**
 
-!["Screenshot of main Tweeter page"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page.png?raw=true)
+!["Screenshot of main page form"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page.png?raw=true)
 
-**Main Tweeter Page with an Error Message when Submitting an Empty Tweet**
+**Error displayed on too long tweet**
 
-!["Screenshot of main Tweeter page with error message"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Error.png?raw=true)
+!["Screenshot of error displayed on too long tweet"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Error.png?raw=true)
 
-**Condensed Tweeter Page for Mobile View**
+**Main page on tablet vieww**
 
-!["Screenshot of small main Tweeter page"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page-Small.png?raw=true)
-
-**Condensed Tweeter Page for Mobile View with an Error Message when Submitting a Tweet that is Too Long**
-
-!["Screenshot of small main Tweeter page with error message"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Error-Small.png?raw=true)
-
+!["Screenshot of main page on tablet view"](https://github.com/kliang1194/tweeter/blob/master/public/images/Tweeter-Main-Page-Small.png?raw=true)
 
 ## Getting Started
 1. Install dependencies using the `npm install` command.

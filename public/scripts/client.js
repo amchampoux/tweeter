@@ -107,7 +107,7 @@ $(document).ready(()=> {
         loadtweets();
         
       });
-      $error.slideUp();
+      $error.slideUp(150);
     }
   });
 });

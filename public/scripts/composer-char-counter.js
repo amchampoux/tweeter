@@ -10,6 +10,7 @@ $(document).ready(()=> {
   const $writeIcon = $('#write-icon');
   const $nav = $('nav');
 
+  // Manage counter color on error
   $form.on('input', '#tweet-text', function(e) {
     const initialValue = 140;
     let counterValue = initialValue - $input.val().length;
@@ -21,6 +22,7 @@ $(document).ready(()=> {
     }
   });
 
+  // Display scroll to top button
   window.onscroll = function() {
     scrollFunction();
   };

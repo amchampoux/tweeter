@@ -81,12 +81,14 @@ $(document).ready(()=> {
     });
   });
 
+  // Display article on post submit
   $form.on('submit', (event) => {
     event.preventDefault();
     const data = $form.serialize();
-    console.log(data);
-
-    if (data.length > 140) {
+    console.log("input is:", $input.val());
+    console.log("length is:", $input.val().length);
+    // Display error banner if post not valid or display article
+    if ($input.val().length < 1 || $input.val().length > 140) {
       $error.css("display", "flex");
       $error.slideDown();
       event.preventDefault();

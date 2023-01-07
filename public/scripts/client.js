@@ -85,11 +85,9 @@ $(document).ready(()=> {
   $form.on('submit', (event) => {
     event.preventDefault();
     const data = $form.serialize();
-    console.log("input is:", $input.val());
-    console.log("length is:", $input.val().length);
     // Display error banner if post not valid or display article
     const longTextError = 'Your text is too long! Please respect the limit of 140 characters.';
-    const noTextError = 'You need to enter a tweet';
+    const noTextError = 'You need to enter a tweet.';
 
     if ($input.val().length > 140) {
       $error.css("display", "flex");

@@ -10,11 +10,11 @@ $(document).ready(()=> {
   const $input = $('#tweet-text');
   const $tweetContainer = $('#tweets-container');
   const $error = $('#error__box');
+  const $errorText = $('#error__box__text');
   const $counter = $('output');
   const $writeIcon = $('#write-icon');
   const $tweetPlaceholder = $('.tweet--placeholder');
-
-
+  
   const renderTweets = function(tweets) {
     
     $tweetContainer.empty();
@@ -88,8 +88,17 @@ $(document).ready(()=> {
     console.log("input is:", $input.val());
     console.log("length is:", $input.val().length);
     // Display error banner if post not valid or display article
-    if ($input.val().length < 1 || $input.val().length > 140) {
+    const longTextError = 'Your text is too long! Please respect the limit of 140 characters.';
+    const noTextError = 'You need to enter a tweet';
+
+    if ($input.val().length > 140) {
       $error.css("display", "flex");
+      $errorText.html(longTextError);
+      $error.slideDown();
+      event.preventDefault();
+    } else if ($input.val().length < 1) {
+      $error.css("display", "flex");
+      $errorText.html(noTextError);
       $error.slideDown();
       event.preventDefault();
     } else {

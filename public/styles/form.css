@@ -55,6 +55,21 @@
   left: 0px;
 }
 
+.error__box {
+  display: none;
+  align-items: center;
+  background-color: #FEC89A;
+  padding: 0.5em;
+  padding-right: 3em;
+  margin-bottom: 2em;
+}
+
+.error__box__text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 0.5em;
+}
+
 .floating-label-group {
   position: relative;
   margin-top: 15px;
@@ -70,26 +85,15 @@
   transition: all 0.1s ease;
 }
 
+.input::placeholder {
+  color: transparent;
+}
+
 input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
+input:not(:placeholder-shown) ~ .floating-label {
   top: -30px;
   bottom: 0px;
   left: 0px;
   font-size: 20px;
   color: #444;
-}
-
-.error__box {
-  display: none;
-  align-items: center;
-  background-color: #FEC89A;
-  padding: 0.5em;
-  padding-right: 3em;
-  margin-bottom: 2em;
-}
-
-.error__box__text {
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 0.5em;
 }
